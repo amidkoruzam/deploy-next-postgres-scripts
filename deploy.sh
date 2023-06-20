@@ -10,7 +10,7 @@ npm run build
 pm2 stop app
 pm2 start npm --name "app" -- start
 
-$total=$(($(ls | wc -l)))
+$total=(($(ls | wc -l)))
 $count_to_delete=$(expr $total - 5)
 
 if [ $count_to_delete -gt 0 ]
